@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="H, 391:737" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="H, 282:295"
+            app:layout_constraintTop_toBottomOf="@id/img1" />
+
+        <TextView
+            android:id="@+id/font1"
+            android:layout_width="233dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="KEBAIKAN"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img2" />
+
+        <TextView
+            android:id="@+id/font2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserratlight"
+            android:text="BERAWAL"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/font1" />
+
+        <TextView
+            android:id="@+id/font3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="DARI SINI"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/font2" />
+
+        <TextView
+            android:id="@+id/font4"
+            android:layout_width="194dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserratlight"
+            android:gravity="center"
+            android:text="Terpercaya lebih dari 45 tahun"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/font3" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="417dp"
+            android:layout_height="726dp"
+            android:layout_marginTop="276dp"
+            android:paddingTop="100dp"
+            android:src="@drawable/ombak"
+            app:layout_constraintTop_toTopOf="@+id/img1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="500dp"
+            android:src="@drawable/aqua"
+            tools:layout_editor_absoluteX="-63dp"
+            tools:layout_editor_absoluteY="-40dp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:drawableEnd="@drawable/arrow"
+            android:paddingRight="30sp"
+            android:background="@drawable/btn_main"
+            android:onClick="pindah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/font4"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
