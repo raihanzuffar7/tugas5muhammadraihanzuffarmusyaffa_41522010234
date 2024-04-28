@@ -29,7 +29,7 @@
         android:layout_height="70dp"
         android:fontFamily="@font/montserratbold"
         android:gravity="center"
-        android:text="Registrasi"
+        android:text="Register"
         android:textColor="#4D4D4D"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,9 +46,12 @@
         android:gravity="center"
         android:text="Nama Lengkap"
         android:textColor="#4D4D4D"
-        android:layout_marginLeft="57dp"
         app:layout_constraintBottom_toTopOf="@+id/edittext1"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edittext1"
@@ -56,7 +59,7 @@
         android:layout_height="40dp"
         android:background="@drawable/btn02"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/font5"
@@ -77,12 +80,14 @@
         android:id="@+id/font7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/montserratregular"
         android:gravity="center"
         android:text="Email"
         android:textColor="#4D4D4D"
-        android:layout_marginLeft="57dp"
         app:layout_constraintBottom_toTopOf="@+id/edittext2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -91,7 +96,7 @@
         android:layout_height="40dp"
         android:background="@drawable/btn02"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittext1"
@@ -112,12 +117,14 @@
         android:id="@+id/font8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/montserratregular"
         android:gravity="center"
         android:text="Kata Sandi"
         android:textColor="#4D4D4D"
-        android:layout_marginLeft="57dp"
         app:layout_constraintBottom_toTopOf="@+id/edittext3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -126,7 +133,7 @@
         android:layout_height="40dp"
         android:background="@drawable/btn02"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittext2"
@@ -150,12 +157,14 @@
         android:id="@+id/font9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/montserratregular"
         android:gravity="center"
         android:text="Konfirmasi Kata Sandi"
         android:textColor="#4D4D4D"
-        android:layout_marginLeft="57dp"
         app:layout_constraintBottom_toTopOf="@+id/edittext4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -164,7 +173,7 @@
         android:layout_height="40dp"
         android:background="@drawable/btn02"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittext3"
@@ -192,6 +201,7 @@
         android:text="Registrasi"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        android:onClick="pindahkehomepageregister"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

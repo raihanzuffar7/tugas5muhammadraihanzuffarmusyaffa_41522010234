@@ -27,4 +27,8 @@ public class login2 extends AppCompatActivity {
         Intent pindahlogin = new Intent(login2.this, login.class);
         startActivity(pindahlogin);
     }
+    public void pindahkehomepagelogin(View view) {
+        Intent pindahkehomepagelogin = new Intent(login2.this, homepage.class);
+        startActivity(pindahkehomepagelogin);
+    }
 }

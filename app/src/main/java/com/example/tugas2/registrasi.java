@@ -26,4 +26,9 @@ public class registrasi extends AppCompatActivity {
         Intent pindahkembalikelogin = new Intent(registrasi.this, login.class);
         startActivity(pindahkembalikelogin);
     }
+    public void pindahkehomepageregister(View view) {
+        Intent pindahkehomepageregister = new Intent(registrasi.this, homepage.class);
+        startActivity(pindahkehomepageregister);
+    }
 }
+

@@ -15,21 +15,22 @@
         android:gravity="center"
         android:text="Login"
         android:textColor="#4D4D4D"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.160" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edittext1"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/btn02"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/font5"
         app:startIconDrawable="@drawable/email"
@@ -41,7 +42,7 @@
             android:layout_gravity="center"
             android:background="@null"
             android:ems="14"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,40 +50,47 @@
         android:id="@+id/font6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserratbold"
+        android:fontFamily="@font/montserratregular"
         android:gravity="center"
+        android:layout_marginBottom="8dp"
         android:text="Email"
         android:textColor="#4D4D4D"
-        android:layout_marginLeft="57dp"
-        app:layout_constraintBottom_toTopOf="@+id/edittext1"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
 
     <TextView
         android:id="@+id/font7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserratbold"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/montserratregular"
         android:text="Kata Sandi"
         android:textColor="#4D4D4D"
-        android:layout_marginLeft="57dp"
         app:layout_constraintBottom_toTopOf="@+id/edittext2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edittext2"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/btn02"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittext1"
-        app:startIconDrawable="@drawable/look"
-        app:startIconTint="#1A529D"
         app:passwordToggleDrawable="@drawable/hideeye"
         app:passwordToggleEnabled="true"
-        app:passwordToggleTint="#1A529D">
+        app:passwordToggleTint="#1A529D"
+        app:startIconDrawable="@drawable/look"
+        app:startIconTint="#1A529D">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="300dp"
@@ -90,7 +98,7 @@
             android:layout_gravity="center"
             android:background="@null"
             android:ems="14"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -117,6 +125,7 @@
         android:background="@drawable/btn01"
         android:text="Login"
         android:textColor="@color/white"
+        android:onClick="pindahkehomepagelogin"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
